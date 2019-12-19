@@ -32,14 +32,7 @@ class Clues {
                     self.clueArray.append(clue)
                     print("clueArray[\(index)] = \(self.clueArray[index].question)")
                 }
-                
-                //                let numberOfCategories = json.count
-                //                for index in 0..<numberOfCategories {
-                //                    let id = json[index]["id"].intValue
-                //                    let title = json[index]["title"].stringValue
-                //                    let cluesCount = json[index]["clues_count"].intValue
-                //                    self.categoryArray.append(Category(id: id, title: title, cluesCount: cluesCount))
-            //                }
+              
             case .failure(let error):
                 print("😡😡 ERROR: failed to get data from url \(self.apiURL), error: \(error.localizedDescription)")
             }
